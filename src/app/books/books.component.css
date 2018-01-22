@@ -1,0 +1,6 @@
+.books-view{ padding: 32px;height: 169px;box-shadow: 0 1px 6px rgba(57,73,76,.35); margin: 12px}
+.m-t-1{ margin-top: 1em;}
+.title { color:#303b9e; }
+@media (max-width: 400px) {
+    .books-view{height: 245px;}
+}

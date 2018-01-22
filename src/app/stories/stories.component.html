@@ -1,0 +1,29 @@
+<h3 class="text-center top-stories-text-color">Top Stories</h3>
+
+<div class="container">
+    <div *ngFor="let post of posts">
+    <div class="col-md-6 stories-list"   >
+
+        <div class="col-md-2 text-center-xs">  <span *ngFor="let o of post.multimedia |slice:1:2">
+            <span  ><img class="img-circle" src="{{o.url}}" height="100" width="100"></span>
+            </span></div>
+
+
+        <div class="col-md-10 no-padding-xs">
+            <div class="text-center title"><h6>{{post.title}}</h6></div>
+            <div class="no-padding-xs col-md-12 col-xs-12 text-right m-t-1 height-70" >
+            <span><h5 class="">{{post.abstract}}</h5></span>
+        </div>
+            <div class="col-md-12 col-xs-12 text-center m-t-1"><a class="full-story" href="{{post.url}}" target= "_blank" class="btn btn-primary full-story">Read full story here</a></div>
+
+            <div class="col-md-12 text-right m-t-1 publishing ">
+                <span  ><small>Published on :- <i>{{post.created_date | date:'yyyy-MM-dd HH:mm a'}}</i> </small></span>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</div>
+</div>
